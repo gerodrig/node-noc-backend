@@ -18,4 +18,5 @@ PROD=false
 ``` 
     docker-compose up -d
 ```
-1. To start the application run the command ```npm run dev```
+5. Execute command ```npx primsa migrate dev``` to migrate the database.
+6. To start the application run the command ```npm run dev```

@@ -48,7 +48,7 @@ export class LogEntity {
         return new LogEntity({
             message,
             level,
-            timestamp,
+            timestamp: new Date(timestamp),
             origin,
         });
     };

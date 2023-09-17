@@ -37,7 +37,7 @@ private createLogsFiles = () => {
 
 async saveLog(newLog: LogEntity): Promise<void> {
     //add the log based on the severity level
-    const logAsJson = JSON.stringify(newLog);
+    const logAsJson = `${JSON.stringify(newLog)}\n`;
     fs.appendFileSync(this.allLogsPath, logAsJson);
 
     if( newLog.level === LogSeverityLevel.low ) return;
